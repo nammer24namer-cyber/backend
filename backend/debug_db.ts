@@ -9,4 +9,4 @@ const inspect = async () => {
     process.exit(0);
 };
 
-inspect();
+inspect(); 

@@ -35,6 +35,12 @@ export class InMemoryRoomRepository implements RoomRepository {
         const room = rooms.find(r => r.id === roomId);
         if (room) room.status = status as RoomStatus;
     }
+    async delete(id: number): Promise<void> {
+        const index = rooms.findIndex(r => r.id === id);
+        if (index !== -1) {
+            rooms.splice(index, 1);
+        }
+    }
 }
 
 export class InMemoryGuestRepository implements GuestRepository {
