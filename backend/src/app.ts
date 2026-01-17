@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { connectDB } from './infrastructure/database/mongoose';
+import { connectDB } from './config/db';
 import { RoomModel, GuestModel } from './infrastructure/database/schemas';
 import { MongoBookingRepository, MongoGuestRepository, MongoRoomRepository } from './interface-adapters/repositories/MongoRepositories';
 import { BookingUseCase } from './usecases/BookingUseCase';
