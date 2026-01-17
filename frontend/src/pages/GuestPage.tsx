@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getRooms, createBooking } from '../services/api';
 import { Layout } from '../components/Layout';
-import { Calendar, Users, Hotel, X } from 'lucide-react';
+import { Calendar, Users, X } from 'lucide-react';
 
 export const GuestPage = () => {
     const [rooms, setRooms] = useState<any[]>([]);
